@@ -2,8 +2,9 @@ const express = require('express')
 const app = express()
 const port = 3000
 var mysql = require('mysql')
+
 var connection = mysql.createConnection({
-  host: 'localhost',
+  host:  '192.168.99.100',  //docker-machine for dev 'localhost',
   user: 'root',
   password: 'secret',
   database: 'demo'
