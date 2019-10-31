@@ -26,8 +26,11 @@ Approach
 * installation requirements are met in image creation stage 
 * simple web structure is considered with repeatable/scalable approach as far as no complexity is added
 
+Setup
+-----
 
-
+ docker-compose build
+ docker-compose up
 
 
 
