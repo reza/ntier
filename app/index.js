@@ -4,7 +4,7 @@ const port = 3000
 var mysql = require('mysql')
 var motd = "Hello"
 var connection = mysql.createConnection({
-  host:  '192.168.99.100',  //docker-machine for dev 'localhost',
+  host:  'db', //'192.168.99.100',  //docker-machine for dev 'localhost',
   user: 'root',
   password: 'secret',
   database: 'demo'
