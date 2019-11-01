@@ -13,11 +13,17 @@ var connection = mysql.createConnection({
 app.get('/', function (req, res) {
 
   connection.query('SELECT * FROM motd', function (err, rows, fields) {
-    if (err) throw err
+    if (err) {
+      res.status(500);
+      res.send('DB Connection error');
+
+    }
+
     motd=rows[0].message
     console.log('Mysql DB Query Result:', motd)
+    res.send(motd)
   })
-  res.send(motd)
+
 })
 
 app.listen(port, () => console.log('App listening on port:'+ port) )
