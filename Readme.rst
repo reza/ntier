@@ -5,8 +5,7 @@ Requirements
 -----------------------
 
 Using automation we want to spin up an environment which will allow us to connect to a web server on port 80 or 8080 and serve a bit of simple HTML 
-content from a data storage source. You will be required to write a small application in the language/framework of your choice to connect to the database, query it,
- and return the result to the user.
+content from a data storage source. You will be required to write a small application in the language/framework of your choice to connect to the database, query it, and return the result to the user.
 
 Criteria
 --------
@@ -29,13 +28,18 @@ Approach
 Setup
 -----
 
- docker-compose build
- docker-compose up
+ :: 
+    docker-compose build
+    docker-compose up
+    docker-machine ip
 
+if docker-machine is use dteh server will be n the machine ipin other cases the web service will be available at reported ip http://localhost or http://127.0.0.1
 
 Debug
 -----
- docker exec -it ntier_web_1 /bin/sh
+
+:: 
+    docker exec -it ntier_web_1 /bin/sh
 
 
 
