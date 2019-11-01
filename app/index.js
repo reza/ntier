@@ -11,7 +11,6 @@ var connection = mysql.createConnection({
 })
 
 app.get('/', function (req, res) {
-  console.log('Web request:' + req)
 
   connection.query('SELECT * FROM motd', function (err, rows, fields) {
     if (err) throw err

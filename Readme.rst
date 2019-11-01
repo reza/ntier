@@ -33,4 +33,9 @@ Setup
  docker-compose up
 
 
+Debug
+-----
+ docker exec -it ntier_web_1 /bin/sh
+
+
 

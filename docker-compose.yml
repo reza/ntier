@@ -17,6 +17,8 @@ services:
             - db
         links:
             - db
+        # ports:
+        #     - "8000:3000"
         restart: always
 
     web:
@@ -31,3 +33,5 @@ services:
         links:
             - app
         restart: always
+        # volumes:
+        #     - ./web/nginx.conf:/etc/nginx/nginx.conf
