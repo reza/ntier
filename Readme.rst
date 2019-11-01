@@ -28,18 +28,18 @@ Approach
 Setup
 -----
 
- :: 
-    docker-compose build
-    docker-compose up
-    docker-machine ip
+docker-compose build
 
-if docker-machine is use dteh server will be n the machine ipin other cases the web service will be available at reported ip http://localhost or http://127.0.0.1
+docker-compose up
+
+docker-machine ip	
+
+the web service will be available at reported docker machine ip or http://localhost or http://127.0.0.1
 
 Debug
 -----
 
-:: 
-    docker exec -it ntier_web_1 /bin/sh
+docker exec -it ntier_web_1 /bin/sh
 
 
 
